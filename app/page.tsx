@@ -79,7 +79,8 @@ export default function Home() {
             <p className="tagline">CONNECT. CREATE. UPGRADE.</p>
             <div className="founder-block">
               <p className="founder-name">Paul Sichombwe</p>
-              <p className="founder-role">Founder & IT Consultant</p>
+              <p className="founder-role">Founder / CEO</p>
+              <p className="founder-role founder-role-subtle">Computer Consultant</p>
             </div>
           </div>
         </header>
@@ -111,13 +112,17 @@ export default function Home() {
           })}
         </section>
 
-        <div className="business-line-card">
+        <a
+          href={phoneUrl}
+          className="business-line-card"
+          aria-label="Call Paultrae Innovations business line"
+        >
           <span className="business-line-label">Business Line</span>
-          <a href={phoneUrl} className="business-line-value">
+          <span className="business-line-value">
             <HiPhone />
             <span>+260971717275</span>
-          </a>
-        </div>
+          </span>
+        </a>
 
         <section className="social-card" aria-label="Social links">
           <p className="social-title">Follow Paultrae Innovations</p>
